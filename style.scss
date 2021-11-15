@@ -1,0 +1,80 @@
+body{
+    font-family: sans-serif;
+}
+main{
+    width: 85%;
+    margin: 30px auto;
+
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+
+}
+.loading{
+    color: #aaa;
+    padding: 15px;
+    border: 1px dashed #aaa;
+    animation: pulse 0.8s infinite alternate;
+}
+footer{
+    margin-top: 20px;
+    text-align: center;
+}
+#create {
+
+    
+    input {
+        display: block;
+        width: 100%;
+        padding:5px 2px;
+        border: 2px solid #ccc;
+        transition: all 0.35s ease;
+        box-sizing: border-box;
+        
+    }
+    input:focus, textarea:focus{
+        outline: none ;
+        border: 2px solid #00ced1;
+        box-shadow: 0px 0px 4px -1px #00ced1;
+    }
+    label{
+        display: block;
+        width: 300px;
+        margin-top: 10px
+        
+    }
+}
+#date{
+    border: none;
+}
+#date:focus{
+    outline-style: none;
+}
+
+#add{
+    padding: 8px 12px;
+    background: #fff;
+    border: 1px solid #aaa;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+#add:hover{
+    cursor: pointer;
+    background: #00ced1;
+    color: #fff;
+    border-color: #00ced1;
+}
+
+
+/* Animazione */
+@keyframes pulse {
+    form{
+        opacity: 1;
+    }
+    to{
+        opacity: 0.3;
+    }
+}
